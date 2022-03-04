@@ -88,5 +88,5 @@ bSet.add("3");
 bSet.add("4");
 bSet.add("5");
 console.log(aSet.subset(bSet));
-
 console.log(aSet.intersection(bSet).values());
+console.log(aSet.difference(bSet).values());
