@@ -1,4 +1,5 @@
 // main functions: push, pop, peek, length
+//Demo with array
 var letter = [];
 var word = "testtest";
 var rWord = "";
@@ -14,6 +15,7 @@ console.log(word);
 console.log(rWord);
 console.log(word.length);
 
+// Stack class (for leaning)
 var Stack = function () {
   this.count = 0; //count number elements in stack
   this.storage = {};
@@ -33,10 +35,11 @@ var Stack = function () {
     delete this.storage[this.count];
     return result;
   };
-
+  // get size
   this.size = function () {
     return this.count;
   };
+  //peek
   this.peek = function () {
     return this.storage[this.count - 1];
   };
